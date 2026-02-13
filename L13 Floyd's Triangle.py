@@ -1,0 +1,12 @@
+#instead of displaying asterix, we display numbers
+rows = int(input("enter the number of rows : "))
+number = 1 #initialise by 1
+
+print("Floyd's Triangle")
+
+for i in range(1, rows + 1): # representing rows
+    for j in range(1, i + 1): # representing columns
+        print(number, end='  ')
+        number = number + 1
+
+    print()
